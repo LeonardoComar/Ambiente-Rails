@@ -39,7 +39,7 @@ sudo apt-get install -y yarn
 # git
 sudo apt-get install -y git-all
 
-git config --global user.email "leofcomar@gmail.com"
-git config --global user.name "LeonardoComar"
+git config --global user.email ""
+git config --global user.name ""
 
 echo "Ambiente configurado!!"
