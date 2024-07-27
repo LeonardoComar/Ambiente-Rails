@@ -26,9 +26,9 @@ sudo apt-get install -y postgresql libpq-dev
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 source ~/.bash_profile
-nvm install 20.14.0
-nvm use 20.14.0
-nvm alias default 20.14.0
+nvm install --lts
+nvm use --lts
+nvm alias default node
 
 # yarn 
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
