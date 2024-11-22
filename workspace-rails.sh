@@ -13,11 +13,7 @@ gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113
 \curl -sSL https://get.rvm.io | bash -s stable
 echo 'source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
 source ~/.bashrc
-rvm get stable
-# Obter a última versão LTS do Ruby
-LATEST_LTS=$(rvm list known | grep -E '\[ruby-[0-9]+\.[0-9]+\.[0-9]+\]' | grep -v 'preview\|rc' | tail -n 1 | awk '{print $1}' | tr -d '[]')
-# Usar a última versão LTS do Ruby como padrão
-rvm use --default --install $LATEST_LTS
+rvm use --default --install 3.3.1
 
 # bundler e rails
 gem install bundler
@@ -27,11 +23,12 @@ gem install rails
 sudo apt-get install -y postgresql libpq-dev
 
 # Node.js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+## Nota: Toda vez que for instalar o NVM verificar a versão aqui https://github.com/nvm-sh/nvm/releases
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 source ~/.bashrc
 source ~/.bash_profile
 nvm install --lts
-nvm use --lts
+nvm use node
 nvm alias default node
 
 # yarn 
