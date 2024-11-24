@@ -23,11 +23,12 @@ gem install rails
 sudo apt-get install -y postgresql libpq-dev
 
 # Node.js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+## Nota: Toda vez que for instalar o NVM verificar a versão aqui https://github.com/nvm-sh/nvm/releases
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 source ~/.bashrc
 source ~/.bash_profile
 nvm install --lts
-nvm use --lts
+nvm use node
 nvm alias default node
 
 # yarn 
