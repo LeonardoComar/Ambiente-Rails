@@ -13,7 +13,7 @@ gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113
 \curl -sSL https://get.rvm.io | bash -s stable
 echo 'source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
 source ~/.bashrc
-rvm use --default --install 3.3.5
+rvm use --default --install 3.4.2
 
 # bundler e rails
 gem install bundler
