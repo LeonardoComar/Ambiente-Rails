@@ -14,7 +14,6 @@ sudo apt update
 rvm install 3.4.2
 rvm --default use 3.4.2
 
-
 sudo tee /etc/profile.d/rvm.sh << 'EOF'
 #
 # RVM profile
