@@ -11,8 +11,8 @@ curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
 \curl -sSL https://get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
 sudo apt update
-rvm install 3.4.2
-rvm --default use 3.4.2
+rvm install 3.4.3
+rvm --default use 3.4.3
 
 sudo tee /etc/profile.d/rvm.sh << 'EOF'
 #
