@@ -2,8 +2,7 @@ echo "iniciando o preparo do ambiente..."
 
 # Atualizacao das dependencias
 sudo apt update && sudo apt upgrade -y
-sudo apt install curl gpg gcc g++ make -y
-sudo apt-get install -y zip plocate
+sudo apt install curl gpg gcc g++ make zip plocate -y
 
 # RVM e ruby
 curl -sSL https://rvm.io/mpapis.asc | gpg --import -
