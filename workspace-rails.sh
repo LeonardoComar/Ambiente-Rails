@@ -91,6 +91,9 @@ npm install -g yarn --verbose
 # git
 sudo apt-get install -y git-all
 
+# Atualização da base de dados plocate
+sudo updatedb
+
 git config --global user.email ""
 git config --global user.name ""
 
